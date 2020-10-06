@@ -1,5 +1,5 @@
 {
-    "name": "rinvex/laravel-support",
+    "name": "allcaretravel/laravel-support",
     "description": "Rinvex common support helpers, contracts, and traits required by various Rinvex packages. Validator functionality, and basic controller included out-of-the-box.",
     "type": "library",
     "keywords": [
@@ -40,7 +40,6 @@
     ],
     "require": {
         "php": "^7.4.0",
-        "felixkiss/uniquewith-validator": "^3.4.0",
         "illuminate/auth": "^8.0",
         "illuminate/bus": "^8.0",
         "illuminate/contracts": "^8.0",
@@ -48,11 +47,11 @@
         "illuminate/routing": "^8.0",
         "illuminate/support": "^8.0",
         "illuminate/validation": "^8.0",
-        "spatie/laravel-schemaless-attributes": "^1.7.0",
-        "watson/validating": "^5.0.0"
+        "spatie/laravel-schemaless-attributes": "^1.8",
+        "watson/validating": "^6.0",
+        "allcaretravel/uniquewith-validator": "^4.0"
     },
     "require-dev": {
-        "codedungeon/phpunit-result-printer": "^0.27.0",
         "phpunit/phpunit": "^9.0.0"
     },
     "autoload": {
@@ -71,19 +70,11 @@
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
-    "config": {
-        "sort-packages": true,
-        "preferred-install": "dist",
-        "optimize-autoloader": true
-    },
     "extra": {
         "laravel": {
             "providers": [
                 "Rinvex\\Support\\Providers\\SupportServiceProvider"
             ]
-        },
-        "branch-alias": {
-            "dev-master": "4.3.x-dev"
         }
     },
     "minimum-stability": "dev",
